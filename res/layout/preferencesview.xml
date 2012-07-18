@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/PreferemcesHeaderString"
+        android:textStyle="bold"
+        android:textSize="@dimen/HeadderSize"
+        android:textColor="@color/HeaderColor"
+        android:gravity="center_horizontal"/>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/GeneralSettings"
+                android:layout_margin="@dimen/BoarderWidth">
+                
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ViewTextColor"
+                    android:textSize="@dimen/SubHeadderSize"
+                    android:padding="@dimen/HeadderPadding"
+                    android:text="@string/GeneralSettingsSubHeader"/>
+  
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/HeadderPadding">
+                    
+                    <LinearLayout 
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="vertical">
+                        
+	                    <TextView 
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:padding="@dimen/HeadderPadding"
+	                        android:text="@string/SendTripUpdatesStrings"
+	                        android:gravity="center_vertical"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:textSize="@dimen/FooterSize"
+	                        android:textColor="@color/ViewTextColor"
+	                        android:text="@string/TripUpdateBlurb"
+	                        android:padding="@dimen/HeadderPadding"/>
+	                    
+                    </LinearLayout>
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checkBoxClicked"
+                            android:id="@+id/TripCheckBox"/>
+           	    
+           	    </LinearLayout>
+                
+            </co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout>
+            
+            <co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/BoarderWidth">
+                
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ViewTextColor"
+                    android:textSize="@dimen/SubHeadderSize"
+                    android:padding="@dimen/HeadderPadding"
+                    android:text="@string/ConnectionSettingsString"/>
+                
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/HeadderPadding">
+                    
+                    <LinearLayout 
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="vertical">
+                        
+	                    <TextView 
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:padding="@dimen/HeadderPadding"
+	                        android:text="@string/ConnectionSettingsGPSString"
+	                        android:gravity="center_vertical"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:textSize="@dimen/FooterSize"
+	                        android:textColor="@color/ViewTextColor"
+	                        android:text="@string/GPSBlub"
+	                        android:padding="@dimen/HeadderPadding"/>
+	                    
+                    </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checkBoxClicked"
+                            android:id="@+id/GPSCheckBox"/>
+           	    
+           	    </LinearLayout>
+           	    
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/HeadderPadding">
+                    
+                    <LinearLayout 
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:orientation="vertical">
+                        
+	                    <TextView 
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:padding="@dimen/HeadderPadding"
+	                        android:text="@string/NetworkSettingsString"
+	                        android:gravity="center_vertical"/>
+	                    
+	                    <TextView 
+	                        android:layout_width="fill_parent"
+	                        android:layout_height="wrap_content"
+	                        android:textSize="@dimen/FooterSize"
+	                        android:textColor="@color/ViewTextColor"
+	                        android:text="@string/NetworkSettingsBlurb"
+	                        android:padding="@dimen/HeadderPadding"/>
+	                    
+                    </LinearLayout>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checkBoxClicked"
+                            android:id="@+id/NetworkCheckBox"/>
+           	    
+           	    </LinearLayout>
+                
+            </co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+    <co.nz.ss.taxiMe.CustomViews.Footers.PreferencesFooter
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    
+</LinearLayout>

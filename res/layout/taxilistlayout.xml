@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+        
+    <TabHost
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+        
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    
+		    <ScrollView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/TaxisTab">
+		        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical">
+		            
+		            <co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_margin="@dimen/ButtonMargin">
+		                
+		                <TextView 
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@color/HeaderColor"
+		                    android:text="@string/PriceInfo"
+		                    android:textStyle="bold"
+		                    android:textSize="@dimen/SubHeadderSize"/>
+		                
+		            </co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout>
+		            
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:orientation="vertical"
+		            	android:id="@+id/ListScroller">
+		            	  
+		            </LinearLayout>
+		            
+		        </LinearLayout>
+		        
+		    </ScrollView>
+		    
+		    <LinearLayout  
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:id="@+id/routeTab">
+		        
+		        <co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical"
+		            android:layout_margin="@dimen/ButtonMargin">
+		            
+		            <TextView 
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_margin="@dimen/ButtonMargin"
+		                android:textSize="@dimen/SubHeadderSize"
+		                android:textStyle="bold"
+		                android:text="@string/RouteOverview"/>
+		            
+		            <TextView 
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_margin="@dimen/ButtonMargin"
+		                android:id="@+id/routeOverview"/>
+		            
+		            
+		        </co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout>
+		            
+		        <co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical"
+		            android:layout_margin="@dimen/ButtonMargin"
+		            android:id="@+id/listContainer">
+		            
+		            
+		        </co.nz.ss.taxiMe.CustomViews.BorderedLinearLayout>
+		        
+		    </LinearLayout>
+    
+            
+        </FrameLayout>
+      
+    </LinearLayout>
+    
+</TabHost>
+    
+</LinearLayout>
+
+
+    

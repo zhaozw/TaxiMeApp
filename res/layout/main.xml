@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+     <ImageView
+         android:id="@+id/titleLogo"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/NoSize"
+         android:layout_weight="25"
+         android:background="@drawable/logo" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+       	android:layout_height="@dimen/NoSize"
+       	android:layout_weight="35">
+		    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <Button 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/TaxiSearchButton"
+	            android:text="@string/TaxiSearchString"
+	            android:layout_margin="@dimen/ButtonMargin"
+	            android:onClick="findTaxi"/>
+	        
+	        <Button 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/TaxiRateButton"
+	            android:text="@string/TaxiRateString"
+	            android:layout_marginLeft="@dimen/ButtonMargin"
+	            android:layout_marginRight="@dimen/ButtonMargin"
+	            android:onClick="rateTaxi"/>
+	        
+	        <Button 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/Preferences"
+	            android:text="@string/PreferencesButtonText"
+	            android:layout_margin="@dimen/ButtonMargin"
+	            android:onClick="showPreferences"/>
+	        
+	        <Button 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/ExitButton"
+	            android:text="@string/ExitButtonString"
+	            android:layout_marginLeft="@dimen/ButtonMargin"
+	            android:layout_marginRight="@dimen/ButtonMargin"
+	            android:onClick="exit"/>
+	        
+	    </LinearLayout>
+
+    </ScrollView>
+    
+    <co.nz.ss.taxiMe.CustomViews.Footers.SignitureFooter
+        android:layout_width="fill_parent"
+		android:layout_height="@dimen/NoSize"
+		android:layout_weight="2"/>
+
+</LinearLayout>

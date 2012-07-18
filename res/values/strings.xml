@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaxiMe</string>
+    <string name="ViewFooter">A Smoking Strawberry Creation</string>
+    <color name="ViewTextColor">#FFFFFF</color>
+    <string name="TaxiSearchString">Find a Taxi</string>
+    <string name="TaxiRateString">Rate A Taxi</string>
+    <dimen name="ButtonMargin">10dp</dimen>
+    <string name="PreferencesButtonText">Preferences</string>
+    <dimen name="NoSize">0dp</dimen>
+    <string name="ExitButtonString">Exit</string>
+    <string name="FindTaxiHeader">Find A Taxi To Suit You</string>
+    <dimen name="HeadderSize">25dp</dimen>
+    <color name="HeaderColor">#FFFF00</color>
+    <string name="FromString">From: </string>
+    <dimen name="SubHeadderSize">20dp</dimen>
+    <dimen name="FooterSize">10dp</dimen>
+    <dimen name="BoarderWidth">5dp</dimen>
+    <color name="BorderColor">#575757</color>
+    <dimen name="BorderCornerRadius">2dp</dimen>
+    <dimen name="HeadderPadding">2dp</dimen>
+    <string name="writeFromString">Insert your start location</string>
+    <string name="findLocationButtonString">Use My Location</string>
+    <dimen name="FindTaxiButtonPadding">4dp</dimen>
+    <string name="Or">OR</string>
+    <string name="Go">GO</string>
+    <dimen name="FindTaxiButtonPaddingLarge">10dp</dimen>
+    <string name="empty"/>
+    <string name="NullArguementString">The given arguement was null or empty</string>
+    <string name="endString">Destination:</string>
+    <string name="writeDestinationString">Insert your destination</string>
+    <string name="AddressLine">Address:  </string>
+    <string name="SuburbLine">Suburb:</string>
+    <string name="FindTaxiLocationNote">Note: This application is currently locked to Wellington, New Zealand</string>
+    <string name="SettingsHeaderString">Settings:</string>
+    <dimen name="ImageButtonMargin">5dp</dimen>
+    <string name="BackString">Back</string>
+    <string name="SubmitString">Submit</string>
+    <dimen name="PreferencesButtonMargin">5dp</dimen>
+    <string name="PreferemcesHeaderString">Preferences</string>
+    <string name="RatingHeader">Rate A Taxi</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="ChangedReturnMessage">Return to Home Page?</string>
+    <string name="NotSavedReturnMessage">Your Settings have not been saved.  Leaving this page will loose all changes.  Return to home?</string>
+    <string name="ExitQueryString">Are you sure you wish to exit?</string>
+    <string name="GeneralSettingsSubHeader">General Settings</string>
+    <string name="SendTripUpdatesStrings">Send Updates About My Trip</string>
+    <string name="TripUpdateBlurb">Sending trip updates allows our server to detect traffic jams, and reroute you and other trafic.  Altough turning it on may not have much benifit for you, it does help other users.  Not personal data is collected or stored.</string>
+    <string name="TripUpdatesBooleanString">TripUpdatesBooleanString</string>
+    <string name="Preferences_File">Preferences_File</string>
+    <string name="ConnectionSettingsString">Connections</string>
+    <string name="ConnectionSettingsGPSString">Use GPS</string>
+    <string name="GPSBlub">Using GPS provides a more accurate location, however, uses battery faster</string>
+    <string name="GPSBooleanString">GPSBooleanString</string>
+    <string name="NetworkSettingsString">Use 3G/WIFI Location</string>
+    <string name="NetworkSettingsBlurb">3G/WIFI is less accurate, however, does not use as much battery</string>
+    <string name="NetworkCheckBoxBooleanString">NetworkCheckBoxString</string>
+    <string name="SettingsSavedToastString">Settings Have Been Saved</string>
+    <string name="ToastNotSettingsToSaveMessage">No Changes Have Been Made</string>
+    <string name="WellingtonString">Wellington</string>
+    <string name="NewZealandString">New Zealand</string>
+    <string name="NoConnectionAllowedString">Your settings will not allow this operation.  To use it, please enable either Network or GPS location from the settings menu</string>
+    <string name="NoConnectionsSet">You have turned off both GPS and Network Locators.  Without one or both enabled, you will not be able to automatically find your current location.  Do you wish to save these settings?</string>
+    <string name="LOADING_MESSAGE">Loading... Please Wait</string>
+    <string name="LOADING_TITLE">Loading</string>
+    <string name="NoInternetConnection">You do not have an active internet connection.  Please activate either WIFI or 3G again try again</string>
+    <string name="OK">OK</string>
+    <string name="SelectedProvidersNotAvailable">The method/s selected to locate you are not available.  Please ensure that GPS or Network Loaction is enabled and try again</string>
+    <string name="NetworkErrorString">There was an eror comunicating with the server.  Please ensure that there is an active internet connection and that there is no firewall/Proxy blocking the request and try again</string>
+    <string name="UnableToLocate">We were unable to loacte you.  Please try again, or enable more options</string>
+    <string name="URL_BASE"></string>
+    <string name="GET_INFO_URL">getInfo?i=</string>
+    <string name="GET_PRICES_URL">getPrices?distance=</string>
+    <string name="GET_ROUTE_URL">getRoute?start=</string>
+    <string name="END_URL">&amp;end=</string>
+    
+    <string name="ENCODING">UTF-8</string><string name="SENSOR_URL">&amp;sensorUsed=</string>
+    <string name="GOOGLE">google</string>
+    <string name="Done">Done</string>
+    <string name="TaxiListHeader">Top Matches</string>
+    <string name="EmptyStartOrEnd">You must provide a start and an End Location.  (Hint: If you can\'t see the  end location, scroll down.)</string>
+    <dimen name="TaxiNameSize">20dp</dimen>
+    <dimen name="TaxiNumberSize">15dp</dimen>
+    <dimen name="TaxiCostSize">25dp</dimen>
+    <dimen name="TaxiPhoneLeftIndent">30dp</dimen>
+    <string name="URLExceptionString">The URL given was not correct.  Please double check your start and end locations and try again</string>
+    <string name="ConnectionEncodingExceptionString">Something went wrong while encoding your request.  Please double check your start and end locations and try again</string>
+    <string name="InvalidXMLExceptionString">The response to your request was invalid.  Please double check your start and end locations and try again</string>
+    <string name="ConnectionIOExceptionString">We could not connect to the server.  Please ensure you have an active internet connect that is not blocked by any firewalls/proies, and try again.</string>
+    <string name="InternalServerErrorString">The server encountered an error while procesing your request.  The server has sent the following error message: </string>
+    <dimen name="ListViewTextMargin">4dp</dimen>
+    <string name="PriceInfo">All prices are estimates only</string>
+    <string name="LocationNotFoundExceptionString">The entered Location was not found.  Please try again, or enter a cross road</string>
+    <string name="RouteOverview">Route Overview</string>
+    <string name="NotYetAvailable">This Feature is not yet available</string>
+    <string name="CallBlurb">Press to call</string>
+    <string name="Route">Route</string>
+    <string name="TaxiTabHeadder">Taxis</string>
+    <string name="MapTabHeader">Map</string>
+    <string name="RouteInfoTabHeader">Fastest Route</string>
+
+</resources>

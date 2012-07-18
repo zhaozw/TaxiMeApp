@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/FindTaxiHeader"
+        android:textStyle="bold"
+        android:textSize="@dimen/HeadderSize"
+        android:textColor="@color/HeaderColor"
+        android:gravity="center_horizontal"/>
+   
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+	        <co.nz.ss.taxiMe.CustomViews.LocationSelecter
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/startLocationSelecter"
+	            android:layout_margin="@dimen/BoarderWidth"
+	            />
+	        <co.nz.ss.taxiMe.CustomViews.LocationSelecter
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/endLocationSelecter"
+	            android:layout_margin="@dimen/BoarderWidth"
+	            />
+	        
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    
+<co.nz.ss.taxiMe.CustomViews.Footers.FindTaxiFooter
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+
+    </LinearLayout>
